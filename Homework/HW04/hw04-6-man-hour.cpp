@@ -27,8 +27,11 @@
         Salary = U$ 374,000.00
 */
 #include <stdio.h>
+#include <locale.h> // Include the locale.h header for formatting
 
 int main() {
+    setlocale(LC_NUMERIC, ""); // Set the locale for formatting
+
     char employeeID[11];
     int workingHours;
     double hourlySalary, totalSalary;
@@ -47,7 +50,8 @@ int main() {
     // Print formatted output
     printf("Expected Output:\n");
     printf("Employee's ID = %s\n", employeeID);
-    printf("Salary = U$ %.2lf\n", totalSalary);
+    printf("Salary = U$ %'.2lf\n", totalSalary);
 
     return 0;
 }
+
