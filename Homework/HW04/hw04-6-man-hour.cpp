@@ -33,7 +33,7 @@ int main(){
     char EmployeesID[10];
     int hr;
     int salary;
-    float Salary;
+    int Salary;
     printf("Input the Employees ID(Max. 10 chars):\n");
     scanf("%s",EmployeesID);
     printf("Input the working hrs:\n");
@@ -43,6 +43,6 @@ int main(){
     Salary = salary * hr;
     printf("Expected Output:\n");
     printf("Employees ID = %s\n",EmployeesID);
-    printf("Salary = U$ %'0.2f",Salary);
+    printf("Salary = U$ %'d",Salary);
 return 0;
 }
