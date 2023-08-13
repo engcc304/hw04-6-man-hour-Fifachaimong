@@ -38,17 +38,13 @@ int main() {
     int Salary;
 
     printf("Input the Employee's ID (Max. 10 chars):\n");
-    scanf("%s", EmployeesID);
-
+    scanf("%s",EmployeesID);
     printf("Input the working hours:\n");
-    scanf("%d", &workingHours);
-
+    scanf("%d",&workingHours);
     printf("Salary amount/hr:\n");
-    scanf("%d", &hourlySalary);
-
+    scanf("%d",&hourlySalary);
+    
     Salary = workingHours * hourlySalary;
-
-    // Print formatted output
     printf("Expected Output:\n");
     printf("Employees ID = %s\n",EmployeesID);
     printf("Salary = U$ %'d\n",Salary);
