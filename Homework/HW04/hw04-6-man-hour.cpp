@@ -34,7 +34,8 @@ int main() {
 
     char EmployeesID[10];
     int workingHours;
-    double hourlySalary, Salary;
+    int hourlySalary;
+    int Salary;
 
     printf("Input the Employee's ID (Max. 10 chars):\n");
     scanf("%s", EmployeesID);
@@ -43,14 +44,14 @@ int main() {
     scanf("%d", &workingHours);
 
     printf("Salary amount/hr:\n");
-    scanf("%lf", &hourlySalary);
+    scanf("%d", &hourlySalary);
 
     Salary = workingHours * hourlySalary;
 
     // Print formatted output
     printf("Expected Output:\n");
-    printf("Employees ID = %s\n", EmployeesID);
-    printf("Salary = U$ %'.2lf\n", Salary);
+    printf("Employees ID = %s\n",EmployeesID);
+    printf("Salary = U$ %'d\n",Salary);
 
     return 0;
 }
