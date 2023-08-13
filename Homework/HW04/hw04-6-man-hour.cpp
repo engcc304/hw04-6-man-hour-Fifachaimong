@@ -32,7 +32,7 @@
 int main() {
     setlocale(LC_NUMERIC, ""); // Set the locale for formatting
 
-    char EmployeesID[10];
+    char EmployeesID[11];
     int workingHours;
     int hourlySalary;
     int Salary;
