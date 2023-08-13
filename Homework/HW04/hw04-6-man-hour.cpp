@@ -32,12 +32,12 @@
 int main() {
     setlocale(LC_NUMERIC, ""); // Set the locale for formatting
 
-    char employeeID[11];
+    char EmployeesID[10];
     int workingHours;
-    double hourlySalary, totalSalary;
+    double hourlySalary, Salary;
 
     printf("Input the Employee's ID (Max. 10 chars):\n");
-    scanf("%s", employeeID);
+    scanf("%s", EmployeesID);
 
     printf("Input the working hours:\n");
     scanf("%d", &workingHours);
@@ -45,12 +45,12 @@ int main() {
     printf("Salary amount/hr:\n");
     scanf("%lf", &hourlySalary);
 
-    totalSalary = workingHours * hourlySalary;
+    Salary = workingHours * hourlySalary;
 
     // Print formatted output
     printf("Expected Output:\n");
-    printf("Employee's ID = %s\n", employeeID);
-    printf("Salary = U$ %'.2lf\n", totalSalary);
+    printf("Employees ID = %s\n", EmployeesID);
+    printf("Salary = U$ %'.2lf\n", Salary);
 
     return 0;
 }
