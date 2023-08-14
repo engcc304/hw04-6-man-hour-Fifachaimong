@@ -45,7 +45,7 @@ int main() {
     salary = salaryperhours * hours;
     printf("Expected Output:\n");
     printf("Employees ID = %s\n",EmployeesID);
-    printf("Salary = U$ %'d\n",salary);
+    printf("Salary = U$ %'d",salary);
 
     return 0;
 }//end main function
