@@ -28,24 +28,27 @@
 */
 #include <stdio.h>
 #include <locale.h>
+
 int main() {
-    setlocale (LC_NUMERIC,"");
+    setlocale(LC_NUMERIC, "");
+
     char EmployeesID[11];
     int hours;
     int salaryperhours;
     float Salary;
 
     printf("Input the Employees ID:\n");
-    scanf("%s",EmployeesID);
+    scanf("%s", EmployeesID);
     printf("Input the working hrs:\n");
-    scanf("%d",&hours);
+    scanf("%d", &hours);
     printf("Salary amount/hr:\n");
-    scanf("%d",&salaryperhours);
+    scanf("%d", &salaryperhours);
 
     Salary = salaryperhours * hours;
-    printf("Expected Output:\n ");
-    printf("Employees ID = %s\n",EmployeesID);
-    printf("Salary = U$ %'.2f",Salary);
+
+    printf("Expected Output:\n");
+    printf("Employees ID = %s\n", EmployeesID);
+    printf("Salary = U$ %'0.2f\n", Salary);
 
     return 0;
-}//end main function
+}
