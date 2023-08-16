@@ -32,13 +32,13 @@
 int main() {
     setlocale(LC_NUMERIC, "");
 
-    char EmployeesID[11];
+    char ID[10];
     int hours;
     int salaryperhours;
     float Salary;
 
     printf("Input the Employees ID:\n");
-    scanf("%s", EmployeesID);
+    scanf("%s", ID);
     printf("Input the working hrs:\n");
     scanf("%d", &hours);
     printf("Salary amount/hr:\n");
@@ -47,7 +47,7 @@ int main() {
     Salary = salaryperhours * hours;
 
     printf("Expected Output:\n");
-    printf("Employees ID = %s\n", EmployeesID);
+    printf("Employees ID = %s\n", ID);
     printf("Salary = U$ %'0.2f\n", Salary);
 
     return 0;
