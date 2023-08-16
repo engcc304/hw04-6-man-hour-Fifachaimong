@@ -38,7 +38,7 @@ int main() {
     float Salary;
 
     printf("Input the Employees ID:\n");
-    scanf("%s", ID);
+    scanf("%s", &ID);
     printf("Input the working hrs:\n");
     scanf("%d", &hours);
     printf("Salary amount/hr:\n");
